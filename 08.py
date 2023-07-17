@@ -13,17 +13,6 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 
-"""# Assignment 8
-### **Abstract**
-This assignment involves generating a signal of the given form, and visualizing it in the time and frequency domain. I will be computing the Fourier Transform of the signal and observing the retrieved frequencies. Additionally, I will be applying the inverse Fourier Transform to the signal and comparing it with the original signal. The assignment also involves regularly sampling the original signal and varying k to observe its effects on the retrieved frequencies. It was found that with increasing k value sampled data decreases and accuracy of the reconstructed data also decreases.
-
-###**Introduction**
-Fourier Transform is a mathematical technique used to decompose a signal into its individual frequency components. It is widely used in various fields such as signal processing, communication systems, and image processing. In this assignment, we will be working with regularly sampled data and using the Fourier Transform to retrieve the signal characteristics.
-
-###**Methods**
-First I define all the necessary functions. These are the signal function y, Descrete Fourier Transform (DFT), DFT_plot, reconstruction, and k_array. The last one is used for the analysis of changing the behaviour of the sampled data with varying k value.
-"""
-
 def y(a,b,B,t):
   return np.sin(a*np.pi*t)+B*np.sin(b*np.pi*t)
 
